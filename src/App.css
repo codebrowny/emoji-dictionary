@@ -1,38 +1,69 @@
 .App {
+  min-height: 100vh;
+  /* background: rgba(255, 179, 193, 0.5); */
+  background: #fcd5ce;
+}
+.navigation-bar {
+  height: 15vh;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px 10px 10px;
+}
+#heading {
+  width: 400px;
+  height: 100px;
+  background-color: rgba(255, 139, 148, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kaushan Script", "Poppins", sans-serif;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.emoji-section {
+  min-height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.card {
+  width: 500px;
+  min-height: 500px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 9px;
+  box-shadow: 1px 1px 4px pink, 1px 1px 4px pink;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  margin: 30px;
+}
+
+.card h1 {
+  font-size: 90px;
+  /* border: 1px solid red; */
+  width: 100%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 36px;
+  text-align: center;
+  color: rgb(255, 124, 146);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card p {
+  padding: 20px;
+  font-size: 19px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  line-height: 30px;
 }
